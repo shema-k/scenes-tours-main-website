@@ -1783,21 +1783,6 @@ nav a.active {
           <button class="btn btn-secondary" id="btn-hero-enquire">Enquire Now</button>
         </div>
 
-        <div class="auto-mode-panel">
-          <div class="auto-mode-info">
-            <span class="auto-mode-label">Auto Refresh Mode</span>
-            <p class="auto-mode-text">This page updates automatically every 5 seconds so your tour highlights stay fresh on any device.</p>
-          </div>
-          <div class="auto-mode-actions">
-            <button class="btn btn-outline" id="toggle-auto-mode">Pause Auto Refresh</button>
-            <button class="btn btn-secondary" id="reset-layout">Reset View</button>
-          </div>
-          <div class="auto-mode-status" id="auto-mode-status">Auto refresh enabled · next update in 5s</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ===== DESTINATIONS SECTION (FIXED: both cards inside the grid) ===== -->
   <section class="section section-alt" id="destinations">
     <div class="container">
@@ -2246,57 +2231,7 @@ nav a.active {
       }
     });
 
-    // ----- Auto Refresh logic (5s) -----
-    let autoRefreshInterval = null;
-    let autoRefreshEnabled = true;
-    const statusEl = document.getElementById('auto-mode-status');
-
-    function startAutoRefresh() {
-      if (autoRefreshInterval) clearInterval(autoRefreshInterval);
-      let countdown = 5;
-      statusEl.textContent = 'Auto refresh enabled · next update in ' + countdown + 's';
-      autoRefreshInterval = setInterval(() => {
-        countdown -= 1;
-        if (countdown <= 0) {
-          // Simulate refresh: re-trigger animations / reshuffle highlights
-          document.querySelectorAll('.trip-card').forEach((card, index) => {
-            card.style.transition = 'none';
-            card.style.opacity = '0.5';
-            setTimeout(() => {
-              card.style.transition = '';
-              card.style.opacity = '1';
-            }, 50);
-          });
-          countdown = 5;
-          statusEl.textContent = 'Auto refresh enabled · next update in ' + countdown + 's';
-        } else {
-          statusEl.textContent = 'Auto refresh enabled · next update in ' + countdown + 's';
-        }
-      }, 1000);
-    }
-
-    function stopAutoRefresh() {
-      if (autoRefreshInterval) {
-        clearInterval(autoRefreshInterval);
-        autoRefreshInterval = null;
-      }
-      statusEl.textContent = 'Auto refresh paused';
-    }
-
-    startAutoRefresh();
-
-    document.getElementById('toggle-auto-mode').addEventListener('click', function() {
-      if (autoRefreshEnabled) {
-        stopAutoRefresh();
-        this.textContent = 'Resume Auto Refresh';
-        autoRefreshEnabled = false;
-      } else {
-        startAutoRefresh();
-        this.textContent = 'Pause Auto Refresh';
-        autoRefreshEnabled = true;
-      }
-    });
-
+   
     // ----- Reset View (scroll to top and reset animations) -----
     document.getElementById('reset-layout').addEventListener('click', function() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
