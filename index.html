@@ -2221,25 +2221,36 @@ nav a.active {
       });
     });
 
-    // ----- Header scroll effect -----
-    const header = document.getElementById('header');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
+// ----- Header scroll effect -----
+const header = document.getElementById('header');
 
-   
-    // ----- Reset View (scroll to top and reset animations) -----
-    document.getElementById('reset-layout').addEventListener('click', function() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      document.querySelectorAll('.trip-card').forEach(card => {
-        card.style.transform = 'scale(0.98)';
-        setTimeout(() => { card.style.transform = ''; }, 300);
-      });
+if (header) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+}
+
+
+// ----- Reset View (scroll to top and reset animations) -----
+const resetBtn = document.getElementById('reset-layout');
+
+if (resetBtn) {
+  resetBtn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    document.querySelectorAll('.trip-card').forEach(card => {
+      card.style.transform = 'scale(0.98)';
+
+      setTimeout(() => {
+        card.style.transform = '';
+      }, 300);
     });
+  });
+}
 
     // ----- Intersection Observer for scroll animations -----
     const animElements = document.querySelectorAll('.animate-on-scroll');
