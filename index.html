@@ -1777,82 +1777,38 @@ nav a.active {
   pointer-events: none; /* so it doesn’t block video clicks */
 }
     }
-    .blog-section {
-  max-width: 950px;
-  margin: 0 auto;
+  .blog-card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    margin-bottom:40px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
 }
 
-.blog-article {
-  background: #fff;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: var(--shadow-md);
-  margin-bottom: 60px;
-  border: 1px solid rgba(15,23,42,0.08);
+.blog-card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
 }
 
-.blog-header-image {
-  width: 100%;
-  height: 450px;
-  object-fit: cover;
+.blog-content{
+    padding:25px;
 }
 
-.blog-content {
-  padding: 40px;
+.blog-content h2{
+    font-size:30px;
+    margin-bottom:10px;
 }
 
-.blog-category {
-  display: inline-block;
-  color: var(--primary-gold);
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 15px;
+.blog-content a{
+    text-decoration:none;
+    color:inherit;
 }
 
-.blog-title {
-  font-family: var(--font-serif);
-  font-size: 2.5rem;
-  line-height: 1.2;
-  margin-bottom: 15px;
-  color: var(--primary-dark);
-}
-
-.blog-meta {
-  color: var(--text-muted);
-  margin-bottom: 25px;
-  font-size: 0.9rem;
-}
-
-.blog-text {
-  color: var(--text-secondary);
-  line-height: 1.9;
-  font-size: 1.05rem;
-  margin-bottom: 20px;
-}
-
-.blog-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-  gap: 15px;
-  margin-top: 30px;
-}
-
-.blog-gallery img,
-.blog-gallery video {
-  width: 100%;
-  height: 230px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-.blog-cta {
-  margin-top: 30px;
-  padding: 25px;
-  background: #f8fafc;
-  border-left: 4px solid var(--primary-gold);
-  border-radius: 12px;
+.read-more{
+    display:inline-block;
+    margin-top:15px;
+    font-weight:bold;
 }
   </style>
 </head>
@@ -2014,132 +1970,63 @@ nav a.active {
       </p>
     </div>
 
-    <article class="blog-article">
+<article class="blog-card">
 
-<img src="rwanda.jpeg" alt="Kigali Rwanda" class="blog-header-image">
+    <a href="rwanda-adventures.html">
+        <img src="images/rwanda1.jpg" alt="Rwanda Tour">
+    </a>
 
-<div class="blog-content">
+    <div class="blog-content">
 
-<span class="blog-category">Travel Feature</span>
+        <h2>
+            <a href="rwanda-adventures.html">
+                Rwanda Adventures & Safari Packages
+            </a>
+        </h2>
 
-<h2 class="blog-title">
-Why Rwanda Continues To Be One Of East Africa's Most Inspiring Destinations
-</h2>
+        <div class="blog-meta">
+            Available All Year Round
+        </div>
 
-<div class="blog-meta">
-Published by Scenes Tours & Travels
-</div>
+        <p>
+            Explore Rwanda's mountain gorillas, volcanoes,
+            luxury lodges and breathtaking landscapes.
+            We organize private and group tours throughout
+            the year with customizable itineraries.
+        </p>
 
-<p class="blog-text">
-Few destinations in Africa combine natural beauty, cleanliness, safety,
-culture and hospitality as effortlessly as Rwanda. Known as the
-"Land of a Thousand Hills", Rwanda offers visitors breathtaking landscapes,
-modern urban experiences and unforgettable adventures.
-</p>
+        <a href="rwanda-adventures.html" class="read-more">
+            Read More →
+        </a>
 
-<p class="blog-text">
-Earlier this year, our Easter Holiday travelers explored Kigali and its
-surrounding attractions, experiencing a journey filled with culture,
-friendship, scenic viewpoints and memorable moments. From the vibrant city
-life to the rolling green hills that stretch across the countryside,
-every stop offered something unique.
-</p>
+    </div>
 
-<p class="blog-text">
-The success of this trip reminded us why Rwanda remains one of our most
-requested destinations. Whether you are travelling alone, as a couple,
-with friends or as a corporate team, Rwanda provides a perfect balance
-between relaxation and exploration.
-</p>
+<article class="blog-card">
 
-<p class="blog-text">
-Scenes Tours & Travels now offers Rwanda packages throughout the year.
-Clients can request private tours, group adventures or customized holiday
-packages at any time. We handle transport, accommodation, planning and
-destination coordination to ensure a smooth travel experience.
-</p>
+    <a href="custom-made-trips.html">
+        <img src="images/custom-trip.jpg" alt="Custom Trips">
+    </a>
 
-<div class="blog-cta">
-<strong>Planning a Rwanda Adventure?</strong><br>
-Custom Rwanda packages are available all year round. Contact us for a
-personalized itinerary and quotation.
-</div>
+    <div class="blog-content">
 
-<div class="blog-gallery">
+        <h2>
+            <a href="custom-made-trips.html">
+                Custom Made Trips Across Uganda
+            </a>
+        </h2>
 
-<img src="rwanda2.jpeg">
-<img src="rwanda3.jpeg">
-<img src="rwanda4.jpeg">
-<img src="rwanda5.jpeg">
-<img src="rwanda6.jpeg">
-<img src="rwanda7.jpeg">
+        <p>
+            Specially designed journeys to any destination
+            in Uganda based on your interests and budget.
+        </p>
 
-<video autoplay muted playsinline>
-<source src="rwanda8.mp4" type="video/mp4">
-</video>
+        <a href="custom-made-trips.html" class="read-more">
+            Read More →
+        </a>
 
-</div>
+    </div>
 
-</div>
 </article>
-
-    <article class="blog-article">
-
-<img src="queen1.jpeg" alt="Custom Tours Uganda" class="blog-header-image">
-
-<div class="blog-content">
-
-<span class="blog-category">Custom Travel</span>
-
-<h2 class="blog-title">
-Custom Made Trips: Travel Designed Around You
-</h2>
-
-<div class="blog-meta">
-Special Experiences Across Uganda
-</div>
-
-<p class="blog-text">
-Not every traveler wants to follow a fixed itinerary. Some dream of a
-weekend by a peaceful lake, while others want a wildlife safari,
-corporate retreat, birthday celebration or family getaway.
-</p>
-
-<p class="blog-text">
-At Scenes Tours & Travels, we design personalized travel experiences
-based entirely on our clients' preferences. You choose the destination,
-budget and travel style—we handle the planning.
-</p>
-
-<p class="blog-text">
-Our custom-made trips cover destinations across Uganda including
-Queen Elizabeth National Park, Murchison Falls, Lake Bunyonyi,
-Jinja, Sipi Falls, Lake Mburo and many other hidden gems.
-</p>
-
-<p class="blog-text">
-Whether you are travelling alone, as a couple, with family or as a large
-organization, we create itineraries tailored specifically to your goals.
-</p>
-
-<div class="blog-cta">
-<strong>Your Dream Destination, Your Schedule.</strong><br>
-Tell us where you want to go and our team will create a custom itinerary,
-transport plan and accommodation package designed specifically for you.
-</div>
-
-<div class="blog-gallery">
-
-<img src="queen1.jpeg">
-<img src="queen2.jpeg">
-<img src="queen3.jpeg">
-<img src="queen4.jpeg">
-
-</div>
-
-</div>
-</article>
-
     </div>
 
   </div>
@@ -2406,7 +2293,7 @@ transport plan and accommodation package designed specifically for you.
 
     function startAutoRefresh() {
       if (autoRefreshInterval) clearInterval(autoRefreshInterval);
-      let countdown = 5;
+      let countdown = 20;
       statusEl.textContent = 'Auto refresh enabled · next update in ' + countdown + 's';
       autoRefreshInterval = setInterval(() => {
         countdown -= 1;
@@ -2420,7 +2307,7 @@ transport plan and accommodation package designed specifically for you.
               card.style.opacity = '1';
             }, 50);
           });
-          countdown = 5;
+          countdown = 20;
           statusEl.textContent = 'Auto refresh enabled · next update in ' + countdown + 's';
         } else {
           statusEl.textContent = 'Auto refresh enabled · next update in ' + countdown + 's';
