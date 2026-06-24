@@ -1777,6 +1777,83 @@ nav a.active {
   pointer-events: none; /* so it doesn’t block video clicks */
 }
     }
+    .blog-section {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.blog-article {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 60px;
+  border: 1px solid rgba(15,23,42,0.08);
+}
+
+.blog-header-image {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 40px;
+}
+
+.blog-category {
+  display: inline-block;
+  color: var(--primary-gold);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.blog-title {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  color: var(--primary-dark);
+}
+
+.blog-meta {
+  color: var(--text-muted);
+  margin-bottom: 25px;
+  font-size: 0.9rem;
+}
+
+.blog-text {
+  color: var(--text-secondary);
+  line-height: 1.9;
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+}
+
+.blog-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.blog-gallery img,
+.blog-gallery video {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.blog-cta {
+  margin-top: 30px;
+  padding: 25px;
+  background: #f8fafc;
+  border-left: 4px solid var(--primary-gold);
+  border-radius: 12px;
+}
   </style>
 </head>
 <body>
@@ -1937,112 +2014,131 @@ nav a.active {
       </p>
     </div>
 
-    <!-- BLOG STYLE ARTICLE -->
-    <div class="trip-card">
+    <article class="blog-article">
 
-      <div class="trip-content">
+<img src="rwanda.jpeg" alt="Kigali Rwanda" class="blog-header-image">
 
-        <span class="trip-tag">Featured Destination</span>
+<div class="blog-content">
 
-        <h3 class="trip-title">
-          Exploring Rwanda — The Land of a Thousand Hills
-        </h3>
+<span class="blog-category">Travel Feature</span>
 
-        <p class="trip-desc">
-          Rwanda is one of East Africa’s most breathtaking destinations, known for its rolling green hills, clean cities, warm hospitality, and rich cultural heritage.
-          A journey to Kigali and beyond is more than just travel — it is an emotional experience that connects you to nature, history, and modern African transformation.
-        </p>
+<h2 class="blog-title">
+Why Rwanda Continues To Be One Of East Africa's Most Inspiring Destinations
+</h2>
 
-        <div class="trip-info">
+<div class="blog-meta">
+Published by Scenes Tours & Travels
+</div>
 
-          <p>
-            From the moment you arrive in Kigali, you are welcomed by a clean, organized, and peaceful city surrounded by scenic hills and vibrant life.
-            Visitors enjoy guided city tours that highlight Rwanda’s history, cultural landmarks, and modern development.
-          </p>
+<p class="blog-text">
+Few destinations in Africa combine natural beauty, cleanliness, safety,
+culture and hospitality as effortlessly as Rwanda. Known as the
+"Land of a Thousand Hills", Rwanda offers visitors breathtaking landscapes,
+modern urban experiences and unforgettable adventures.
+</p>
 
-          <p>
-            Beyond the city, Rwanda opens up into breathtaking landscapes — from Lake Kivu’s calm waters to lush green countryside roads perfect for road trips and photography.
-          </p>
+<p class="blog-text">
+Earlier this year, our Easter Holiday travelers explored Kigali and its
+surrounding attractions, experiencing a journey filled with culture,
+friendship, scenic viewpoints and memorable moments. From the vibrant city
+life to the rolling green hills that stretch across the countryside,
+every stop offered something unique.
+</p>
 
-          <strong>Why visit Rwanda with us:</strong>
+<p class="blog-text">
+The success of this trip reminded us why Rwanda remains one of our most
+requested destinations. Whether you are travelling alone, as a couple,
+with friends or as a corporate team, Rwanda provides a perfect balance
+between relaxation and exploration.
+</p>
 
-          <ul class="trip-highlights">
-            <li>Beautiful scenic views across the “Land of a Thousand Hills”</li>
-            <li>Clean and safe urban environment in Kigali</li>
-            <li>Rich cultural and historical experiences</li>
-            <li>Professional guided city and countryside tours</li>
-            <li>Perfect destination for photography and group travel</li>
-            <li>Unforgettable adventure experiences and bonding moments</li>
-          </ul>
+<p class="blog-text">
+Scenes Tours & Travels now offers Rwanda packages throughout the year.
+Clients can request private tours, group adventures or customized holiday
+packages at any time. We handle transport, accommodation, planning and
+destination coordination to ensure a smooth travel experience.
+</p>
 
-          <p>
-            Whether you're traveling for leisure, adventure, or cultural exploration, Rwanda offers a calm yet powerful experience that stays with you long after your journey ends.
-          </p>
+<div class="blog-cta">
+<strong>Planning a Rwanda Adventure?</strong><br>
+Custom Rwanda packages are available all year round. Contact us for a
+personalized itinerary and quotation.
+</div>
 
-        </div>
+<div class="blog-gallery">
 
-      </div>
+<img src="rwanda2.jpeg">
+<img src="rwanda3.jpeg">
+<img src="rwanda4.jpeg">
+<img src="rwanda5.jpeg">
+<img src="rwanda6.jpeg">
+<img src="rwanda7.jpeg">
 
-      <!-- KEEP YOUR ORIGINAL GALLERY EXACTLY (UNCHANGED FILE NAMES) -->
-      <div class="trip-gallery-grid">
+<video autoplay muted playsinline>
+<source src="rwanda8.mp4" type="video/mp4">
+</video>
 
-        <div class="image-container">
-          <div class="trip-photo">
-            <img src="rwanda.jpeg" alt="Scenes Tours Rwanda Trip">
-            <img src="logo.png" class="logo-overlay">
-          </div>
-        </div>
+</div>
 
-        <div class="image-container">
-          <div class="trip-photo">
-            <img src="rwanda2.jpeg" alt="Scenes Tours Rwanda Trip">
-            <img src="logo.png" class="logo-overlay">
-          </div>
-        </div>
+</div>
+</article>
 
-        <div class="image-container">
-          <div class="trip-photo">
-            <img src="rwanda3.jpeg" alt="Scenes Tours Rwanda Trip">
-            <img src="logo.png" class="logo-overlay">
-          </div>
-        </div>
+    <article class="blog-article">
 
-        <div class="image-container">
-          <div class="trip-photo">
-            <img src="rwanda4.jpeg" alt="Scenes Tours Rwanda Trip">
-            <img src="logo.png" class="logo-overlay">
-          </div>
-        </div>
+<img src="queen1.jpeg" alt="Custom Tours Uganda" class="blog-header-image">
 
-        <div class="image-container">
-          <div class="trip-photo">
-            <img src="rwanda5.jpeg" alt="Scenes Tours Rwanda Trip">
-            <img src="logo.png" class="logo-overlay">
-          </div>
-        </div>
+<div class="blog-content">
 
-        <div class="image-container">
-          <div class="trip-photo">
-            <img src="rwanda6.jpeg" alt="Scenes Tours Rwanda Trip">
-            <img src="logo.png" class="logo-overlay">
-          </div>
-        </div>
+<span class="blog-category">Custom Travel</span>
 
-        <div class="image-container">
-          <div class="trip-photo">
-            <img src="rwanda7.jpeg" alt="Scenes Tours Rwanda Trip">
-            <img src="logo.png" class="logo-overlay">
-          </div>
-        </div>
+<h2 class="blog-title">
+Custom Made Trips: Travel Designed Around You
+</h2>
 
-        <div class="trip-photo">
-          <video autoplay muted playsinline>
-            <source src="rwanda8.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
+<div class="blog-meta">
+Special Experiences Across Uganda
+</div>
 
-      </div>
+<p class="blog-text">
+Not every traveler wants to follow a fixed itinerary. Some dream of a
+weekend by a peaceful lake, while others want a wildlife safari,
+corporate retreat, birthday celebration or family getaway.
+</p>
+
+<p class="blog-text">
+At Scenes Tours & Travels, we design personalized travel experiences
+based entirely on our clients' preferences. You choose the destination,
+budget and travel style—we handle the planning.
+</p>
+
+<p class="blog-text">
+Our custom-made trips cover destinations across Uganda including
+Queen Elizabeth National Park, Murchison Falls, Lake Bunyonyi,
+Jinja, Sipi Falls, Lake Mburo and many other hidden gems.
+</p>
+
+<p class="blog-text">
+Whether you are travelling alone, as a couple, with family or as a large
+organization, we create itineraries tailored specifically to your goals.
+</p>
+
+<div class="blog-cta">
+<strong>Your Dream Destination, Your Schedule.</strong><br>
+Tell us where you want to go and our team will create a custom itinerary,
+transport plan and accommodation package designed specifically for you.
+</div>
+
+<div class="blog-gallery">
+
+<img src="queen1.jpeg">
+<img src="queen2.jpeg">
+<img src="queen3.jpeg">
+<img src="queen4.jpeg">
+
+</div>
+
+</div>
+</article>
 
     </div>
 
